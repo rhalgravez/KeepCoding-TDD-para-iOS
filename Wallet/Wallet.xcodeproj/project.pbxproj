@@ -12,6 +12,7 @@
 		62D7EF141F106AB700771041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF131F106AB700771041 /* Assets.xcassets */; };
 		62D7EF171F106AB700771041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF151F106AB700771041 /* LaunchScreen.storyboard */; };
 		62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */; };
+		62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF311F1073CA00771041 /* AGTEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		62D7EF1D1F106AB700771041 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D7EF231F106AB700771041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuroTests.m; sourceTree = "<group>"; };
+		62D7EF301F1073CA00771041 /* AGTEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEuro.h; sourceTree = "<group>"; };
+		62D7EF311F1073CA00771041 /* AGTEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 		62D7EF061F106AB600771041 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				62D7EF2F1F1073A900771041 /* Models */,
 				62D7EF0A1F106AB600771041 /* AppDelegate.h */,
 				62D7EF0B1F106AB600771041 /* AppDelegate.m */,
 				62D7EF131F106AB700771041 /* Assets.xcassets */,
@@ -109,6 +113,15 @@
 				62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		62D7EF2F1F1073A900771041 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62D7EF301F1073CA00771041 /* AGTEuro.h */,
+				62D7EF311F1073CA00771041 /* AGTEuro.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */,
+				62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */,
 				62D7EF091F106AB600771041 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

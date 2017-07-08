@@ -8,6 +8,19 @@
 
 #import "AGTEuro.h"
 
+@interface AGTEuro()
+
+@property (nonatomic) NSInteger amount;
+
+@end
+
 @implementation AGTEuro
+
+-(instancetype)initWithAmount:(NSInteger)amount {
+    if (self = [super init]) {
+        _amount = amount;
+    }
+    return self;
+}
 
 @end

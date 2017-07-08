@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AGTEuro.h"
 
 @interface AGTEuroTests : XCTestCase
 

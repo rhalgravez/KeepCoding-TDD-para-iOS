@@ -10,4 +10,8 @@
 
 @interface AGTEuro : NSObject
 
+@property (nonatomic, readonly) NSInteger amount;
+
+-(instancetype)initWithAmount:(NSInteger)amount;
+
 @end

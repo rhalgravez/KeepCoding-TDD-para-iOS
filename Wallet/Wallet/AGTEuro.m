@@ -23,8 +23,12 @@
     return self;
 }
 
--(void)times:(NSInteger)multiplier {
-    self.amount = self.amount * multiplier;
+-(AGTEuro *)times:(NSInteger)multiplier {
+    //Cambiamos la manera de multiplicar para que times: no mute(modifique) al objeto que ya teníamos
+    //lo ideal es que sea inmutable como los objetos en cocoa (ejemplo NSstring que al concatenar un string te regresa un nuevo NSString)
+    AGTEuro *newEuro = [[AGTEuro alloc] initWithAmount: self.amount * multiplier ];
+    
+    return newEuro;
 }
 
 @end

@@ -17,9 +17,9 @@
 
 -(void)testMultiplication {
     AGTEuro *euro = [[AGTEuro alloc] initWithAmount:5];
-    [euro times:2];
+    AGTEuro *total = [euro times:2];
     
-    XCTAssertEqual(euro.amount, 10, @"5*2 should be 10"); 
+    XCTAssertEqual(total.amount, 10, @"5*2 should be 10");
 }
 
 @end

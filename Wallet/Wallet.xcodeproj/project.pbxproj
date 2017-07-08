@@ -11,7 +11,7 @@
 		62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF0B1F106AB600771041 /* AppDelegate.m */; };
 		62D7EF141F106AB700771041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF131F106AB700771041 /* Assets.xcassets */; };
 		62D7EF171F106AB700771041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF151F106AB700771041 /* LaunchScreen.storyboard */; };
-		62D7EF221F106AB700771041 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF211F106AB700771041 /* WalletTests.m */; };
+		62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +33,8 @@
 		62D7EF161F106AB700771041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62D7EF181F106AB700771041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D7EF1D1F106AB700771041 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D7EF211F106AB700771041 /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
 		62D7EF231F106AB700771041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuroTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,18 @@
 		62D7EF201F106AB700771041 /* WalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				62D7EF211F106AB700771041 /* WalletTests.m */,
+				62D7EF2C1F106CF700771041 /* Model */,
 				62D7EF231F106AB700771041 /* Info.plist */,
 			);
 			path = WalletTests;
+			sourceTree = "<group>";
+		};
+		62D7EF2C1F106CF700771041 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D7EF221F106AB700771041 /* WalletTests.m in Sources */,
+				62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 //
-//  WalletTests.m
-//  WalletTests
+//  AGTEuroTests.m
+//  Wallet
 //
 //  Created by Roberto Halgravez on 7/7/17.
 //  Copyright © 2017 Roberto Halgravez. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface WalletTests : XCTestCase
+@interface AGTEuroTests : XCTestCase
 
 @end
 
-@implementation WalletTests
+@implementation AGTEuroTests
 
 - (void)setUp {
     [super setUp];

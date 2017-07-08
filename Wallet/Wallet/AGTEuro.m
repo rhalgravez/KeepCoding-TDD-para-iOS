@@ -23,4 +23,8 @@
     return self;
 }
 
+-(void)times:(NSInteger)multiplier {
+    self.amount = self.amount * multiplier;
+}
+
 @end

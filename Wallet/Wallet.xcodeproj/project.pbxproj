@@ -13,7 +13,7 @@
 		62D7EF171F106AB700771041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF151F106AB700771041 /* LaunchScreen.storyboard */; };
 		62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */; };
 		62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF311F1073CA00771041 /* AGTEuro.m */; };
-		62D7EF331F10760100771041 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF311F1073CA00771041 /* AGTEuro.m */; };
+		62D7EF341F10768900771041 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF311F1073CA00771041 /* AGTEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */,
-				62D7EF331F10760100771041 /* AGTEuro.m in Sources */,
+				62D7EF341F10768900771041 /* AGTEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

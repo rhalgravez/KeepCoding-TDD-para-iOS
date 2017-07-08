@@ -14,4 +14,6 @@
 
 -(instancetype)initWithAmount:(NSInteger)amount;
 
+-(void)times:(NSInteger)multiplier;
+
 @end

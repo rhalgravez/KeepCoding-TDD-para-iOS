@@ -14,6 +14,13 @@
 
 @implementation AGTDollarTest
 
-
+-(void)testMultiplication {
+    AGTDollar *five = [[AGTDollar alloc] initWithAmount:5];
+    AGTDollar *ten = [[AGTDollar alloc] initWithAmount:10];
+    
+    AGTDollar *total = [five times:2];
+    
+    XCTAssertEqualObjects(totla, ten, @"$5*2 = $10");
+}
 
 @end

@@ -10,8 +10,6 @@
 
 @interface AGTEuro : NSObject
 
-@property (nonatomic, readonly) NSInteger amount;
-
 -(instancetype)initWithAmount:(NSInteger)amount;
 
 -(AGTEuro *)times:(NSInteger)multiplier;

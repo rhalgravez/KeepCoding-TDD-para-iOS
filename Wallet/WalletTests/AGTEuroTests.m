@@ -14,12 +14,15 @@
 @end
 
 @implementation AGTEuroTests
-
+//Ahora que tenemos la comparación entre objetos podemos esconder la propiedad amount y verificar
+//la multiplicación de la siguiente manera
 -(void)testMultiplication {
     AGTEuro *euro = [[AGTEuro alloc] initWithAmount:5];
     AGTEuro *total = [euro times:2];
     
-    XCTAssertEqual(total.amount, 10, @"5*2 should be 10");
+    XCTAssertEqualObjects(total,
+                          [[AGTEuro alloc] initWithAmount:10],
+                          @"5*2 should be 10");
 }
 
 //Ahora que modifiqué el modelo para ser inmutable debo tener la capacidad de hacer comparaciones

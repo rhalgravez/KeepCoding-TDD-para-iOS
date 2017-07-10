@@ -17,6 +17,7 @@
 		62D7EF361F1415CB00771041 /* AGTDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF351F1415CA00771041 /* AGTDollarTest.m */; };
 		62D7EF391F14182800771041 /* AGTDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF381F14182800771041 /* AGTDollar.m */; };
 		62D7EF3A1F14182F00771041 /* AGTDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF381F14182800771041 /* AGTDollar.m */; };
+		62D7EF3D1F141EC900771041 /* AGTMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF3C1F141EC900771041 /* AGTMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		62D7EF351F1415CA00771041 /* AGTDollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTDollarTest.m; sourceTree = "<group>"; };
 		62D7EF371F14182800771041 /* AGTDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTDollar.h; sourceTree = "<group>"; };
 		62D7EF381F14182800771041 /* AGTDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTDollar.m; sourceTree = "<group>"; };
+		62D7EF3B1F141EC900771041 /* AGTMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTMoney.h; sourceTree = "<group>"; };
+		62D7EF3C1F141EC900771041 /* AGTMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTMoney.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				62D7EF311F1073CA00771041 /* AGTEuro.m */,
 				62D7EF371F14182800771041 /* AGTDollar.h */,
 				62D7EF381F14182800771041 /* AGTDollar.m */,
+				62D7EF3B1F141EC900771041 /* AGTMoney.h */,
+				62D7EF3C1F141EC900771041 /* AGTMoney.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D7EF3D1F141EC900771041 /* AGTMoney.m in Sources */,
 				62D7EF391F14182800771041 /* AGTDollar.m in Sources */,
 				62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */,
 				62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */,
@@ -428,6 +434,7 @@
 				62D7EF281F106AB700771041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62D7EF291F106AB700771041 /* Build configuration list for PBXNativeTarget "WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				62D7EF2B1F106AB700771041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

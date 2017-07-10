@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AGTMoney.h"
 
-@interface AGTEuro : NSObject
+@interface AGTEuro : AGTMoney
 
 -(instancetype)initWithAmount:(NSInteger)amount;
 

@@ -1,5 +1,5 @@
 //
-//  AGTDollar.h
+//  AGTMoney.h
 //  Wallet
 //
 //  Created by Roberto Halgravez on 7/10/17.
@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AGTMoney.h"
 
-@interface AGTDollar : AGTMoney
+@interface AGTMoney : NSObject
 
 -(instancetype)initWithAmount:(NSInteger)amount;
 
--(AGTDollar *)times:(NSInteger)multiplier;
+-(AGTMoney*)times:(NSInteger)multiplier;
 
 @end

@@ -37,4 +37,12 @@
     XCTAssertEqualObjects(ten, total, @"Equivalent object should be equal");
 }
 
+//Agregamos el testHash ya que como buena práctica al sobrescribir isEqual: también tenemos que sobrescribir hash
+-(void)testHash {
+    AGTEuro *objectA = [[AGTEuro alloc] initWithAmount:2];
+    AGTEuro *objectB = [[AGTEuro alloc] initWithAmount:2];
+    
+    XCTAssertEqual([objectA hash], [objectB hash], @"Equal objects must have same hash");
+}
+
 @end

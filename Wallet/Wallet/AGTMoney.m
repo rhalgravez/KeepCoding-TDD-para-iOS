@@ -30,4 +30,9 @@
     return [self subclassResponsability:_cmd];
 }
 
+#pragma mark - Overwritten
+-(NSString *)description {
+    return [NSString stringWithFormat:@"<%@ %ld>", [self class], [self amount]];
+}
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AGTMoney.h"
+#import "NSObject+GNUStepAddones.h"
 
 @interface AGTMoney ()
 
@@ -26,7 +27,7 @@
 -(AGTMoney*)times:(NSInteger)multiplier {
     //No se debe llamar, sino que se debe usar la de subclase
     
-    return self;
+    return [self subclassResponsability:_cmd];
 }
 
 @end

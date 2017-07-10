@@ -42,4 +42,10 @@
     //es pasar el test
 }
 
+
+-(NSUInteger)hash {
+    //Esta es la solución más rápida para que 2 objetos iguales tengan el mismo hash
+    return (NSUInteger) self.amount;
+}
+
 @end

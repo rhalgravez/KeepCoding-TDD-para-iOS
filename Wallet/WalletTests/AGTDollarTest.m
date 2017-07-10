@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AGTDollar.h"
 
 @interface AGTDollarTest : XCTestCase
 
@@ -20,7 +21,7 @@
     
     AGTDollar *total = [five times:2];
     
-    XCTAssertEqualObjects(totla, ten, @"$5*2 = $10");
+    XCTAssertEqualObjects(total, ten, @"$5*2 = $10");
 }
 
 @end

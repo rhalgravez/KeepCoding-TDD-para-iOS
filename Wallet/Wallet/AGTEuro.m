@@ -31,21 +31,4 @@
     return newEuro;
 }
 
-#pragma mark - Overwriten
-//Siempre procurar implementar de la manera más sencilla posible
--(BOOL)isEqual:(id)object {
-    return  [self amount] == [object amount];
-    //Con esto pasa el text, pero no la mejor implementación porque:
-    //Qué pasa si el object es de otro tipo (ejemplo NSString)?
-    //Qué pasa si pasan nil como parámetro?
-    //estos dos casos deben agreagarse como "To Do" pero por ahora lo que nos importa
-    //es pasar el test
-}
-
-
--(NSUInteger)hash {
-    //Esta es la solución más rápida para que 2 objetos iguales tengan el mismo hash
-    return (NSUInteger) self.amount;
-}
-
 @end

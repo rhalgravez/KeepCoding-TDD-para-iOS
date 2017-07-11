@@ -7,10 +7,12 @@
 //
 
 #import "AGTMoney.h"
-#import "NSObject+GNUStepAddones.h"
-#import "AGTMoney-Private.h"
-#import "AGTEuro.h"
-#import "AGTDollar.h"
+
+@interface AGTMoney ()
+
+@property (nonatomic, strong) NSNumber *amount;
+
+@end
 
 @implementation AGTMoney
 #pragma mark - Class methods

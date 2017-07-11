@@ -11,10 +11,6 @@
 		62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF0B1F106AB600771041 /* AppDelegate.m */; };
 		62D7EF141F106AB700771041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF131F106AB700771041 /* Assets.xcassets */; };
 		62D7EF171F106AB700771041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF151F106AB700771041 /* LaunchScreen.storyboard */; };
-		62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */; };
-		62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF311F1073CA00771041 /* AGTEuro.m */; };
-		62D7EF361F1415CB00771041 /* AGTDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF351F1415CA00771041 /* AGTDollarTest.m */; };
-		62D7EF391F14182800771041 /* AGTDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF381F14182800771041 /* AGTDollar.m */; };
 		62D7EF3D1F141EC900771041 /* AGTMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF3C1F141EC900771041 /* AGTMoney.m */; };
 		62D7EF411F14318D00771041 /* NSObject+GNUStepAddones.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF401F14318D00771041 /* NSObject+GNUStepAddones.m */; };
 		62D7EF431F14361400771041 /* AGTMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF421F14361400771041 /* AGTMoneyTest.m */; };
@@ -40,18 +36,11 @@
 		62D7EF181F106AB700771041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D7EF1D1F106AB700771041 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D7EF231F106AB700771041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuroTests.m; sourceTree = "<group>"; };
-		62D7EF301F1073CA00771041 /* AGTEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEuro.h; sourceTree = "<group>"; };
-		62D7EF311F1073CA00771041 /* AGTEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuro.m; sourceTree = "<group>"; };
-		62D7EF351F1415CA00771041 /* AGTDollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTDollarTest.m; sourceTree = "<group>"; };
-		62D7EF371F14182800771041 /* AGTDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTDollar.h; sourceTree = "<group>"; };
-		62D7EF381F14182800771041 /* AGTDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTDollar.m; sourceTree = "<group>"; };
 		62D7EF3B1F141EC900771041 /* AGTMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTMoney.h; sourceTree = "<group>"; };
 		62D7EF3C1F141EC900771041 /* AGTMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTMoney.m; sourceTree = "<group>"; };
 		62D7EF3F1F14318D00771041 /* NSObject+GNUStepAddones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddones.h"; sourceTree = "<group>"; };
 		62D7EF401F14318D00771041 /* NSObject+GNUStepAddones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddones.m"; sourceTree = "<group>"; };
 		62D7EF421F14361400771041 /* AGTMoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTMoneyTest.m; sourceTree = "<group>"; };
-		62D7EF451F14627900771041 /* AGTMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGTMoney-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +114,6 @@
 		62D7EF2C1F106CF700771041 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				62D7EF2D1F106D3E00771041 /* AGTEuroTests.m */,
-				62D7EF351F1415CA00771041 /* AGTDollarTest.m */,
 				62D7EF421F14361400771041 /* AGTMoneyTest.m */,
 			);
 			name = Model;
@@ -135,13 +122,8 @@
 		62D7EF2F1F1073A900771041 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				62D7EF301F1073CA00771041 /* AGTEuro.h */,
-				62D7EF311F1073CA00771041 /* AGTEuro.m */,
-				62D7EF371F14182800771041 /* AGTDollar.h */,
-				62D7EF381F14182800771041 /* AGTDollar.m */,
 				62D7EF3B1F141EC900771041 /* AGTMoney.h */,
 				62D7EF3C1F141EC900771041 /* AGTMoney.m */,
-				62D7EF451F14627900771041 /* AGTMoney-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -258,9 +240,7 @@
 			files = (
 				62D7EF3D1F141EC900771041 /* AGTMoney.m in Sources */,
 				62D7EF411F14318D00771041 /* NSObject+GNUStepAddones.m in Sources */,
-				62D7EF391F14182800771041 /* AGTDollar.m in Sources */,
 				62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */,
-				62D7EF321F1073CA00771041 /* AGTEuro.m in Sources */,
 				62D7EF091F106AB600771041 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D7EF431F14361400771041 /* AGTMoneyTest.m in Sources */,
-				62D7EF361F1415CB00771041 /* AGTDollarTest.m in Sources */,
-				62D7EF2E1F106D3E00771041 /* AGTEuroTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

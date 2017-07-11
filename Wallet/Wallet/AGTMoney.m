@@ -8,12 +8,7 @@
 
 #import "AGTMoney.h"
 #import "NSObject+GNUStepAddones.h"
-
-@interface AGTMoney ()
-
-@property (nonatomic) NSInteger amount;
-
-@end
+#import "AGTMoney-Private.h"
 
 @implementation AGTMoney
 

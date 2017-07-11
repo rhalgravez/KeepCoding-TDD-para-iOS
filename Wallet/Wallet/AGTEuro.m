@@ -7,12 +7,7 @@
 //
 
 #import "AGTEuro.h"
-
-@interface AGTEuro()
-
-@property (nonatomic) NSInteger amount;
-
-@end
+#import "AGTMoney-Private.h"
 
 @implementation AGTEuro
 

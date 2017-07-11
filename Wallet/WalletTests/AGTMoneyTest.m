@@ -15,5 +15,13 @@
 
 @implementation AGTMoneyTest
 
+-(void)testCurrencies {
+    XCTAssertEqualObjects(@"EUR", [[AGTMoney euroWithAmount:1] currency],
+                          @"The currency of euros should be EUR");
+    
+    XCTAssertEqualObjects(@"USD", [[AGTMoney dollarWithAmount:1] currency],
+                          @"The currency of dollars should be USD");
+}
+
 
 @end

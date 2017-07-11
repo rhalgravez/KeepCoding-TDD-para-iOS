@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTDollar.h"
+#import "AGTMoney-Private.h"
 
 @interface AGTDollarTest : XCTestCase
 

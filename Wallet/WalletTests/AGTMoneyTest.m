@@ -87,4 +87,12 @@
     XCTAssertNotEqualObjects(euro, dollar, @"Different currencies should not be equal");
 }
 
+-(void)testSimpleAdition {
+    AGTMoney *sum = [[AGTMoney dollarWithAmount:5] plus:
+                     [AGTMoney dollarWithAmount:10]];
+    
+    XCTAssertEqualObjects(sum, [AGTMoney dollarWithAmount:15],
+                          @"$5 + $10 = $15");
+}
+
 @end

@@ -19,4 +19,6 @@
 
 -(id)times:(NSInteger)multiplier;
 
+-(AGTMoney *)plus:(AGTMoney *)other;
+
 @end

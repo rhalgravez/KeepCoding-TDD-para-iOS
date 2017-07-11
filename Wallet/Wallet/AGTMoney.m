@@ -44,6 +44,14 @@
     return newMoney;
 }
 
+-(AGTMoney *)plus:(AGTMoney *)other {
+    //Suponiendo que self y other tienen la misma divisa
+    NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    AGTMoney *total = [[AGTMoney alloc] initWithAmount:totalAmount currency:self.currency];
+    
+    return total;
+}
+
 #pragma mark - Overwritten
 -(NSString *)description {
     return [NSString stringWithFormat:@"<%@ %ld>", [self class], [[self amount] integerValue]];

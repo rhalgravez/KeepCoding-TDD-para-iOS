@@ -46,8 +46,11 @@
 -(void)testAmountStorage {
     AGTDollar *dollar = [[AGTDollar alloc] initWithAmount:2];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     XCTAssertEqual(2, [[dollar performSelector:@selector(amount)] intValue], @"The value retrieved should be the smae as the stored");
     //La property amount no está visible en AGTDollar, ni en AGTMoney, tenemos que buscar una solucíón
+#pragma clang diagnostic pop
 }
 
 @end

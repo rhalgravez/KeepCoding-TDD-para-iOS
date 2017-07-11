@@ -22,7 +22,7 @@
     AGTEuro *total = [euro times:2];
     
     XCTAssertEqualObjects(total,
-                          [[AGTEuro alloc] initWithAmount:10],
+                          [AGTMoney euroWithAmount:10],
                           @"5*2 should be 10");
 }
 
@@ -30,8 +30,8 @@
 //entre obetos, por eso creamos el test de igualdad
 -(void)testEquality {
     //Buena práctica: Creamos dos objetos que representan la misma cantidad pero creados de forma distinta
-    AGTEuro *five = [[AGTEuro alloc] initWithAmount:5];
-    AGTEuro *ten = [[AGTEuro alloc] initWithAmount:10];
+    AGTEuro *five = [AGTMoney euroWithAmount:5];
+    AGTEuro *ten = [AGTMoney euroWithAmount:10];
     
     AGTEuro *total = [five times:2];
     
@@ -40,14 +40,14 @@
 
 //Agregamos el testHash ya que como buena práctica al sobrescribir isEqual: también tenemos que sobrescribir hash
 -(void)testHash {
-    AGTEuro *objectA = [[AGTEuro alloc] initWithAmount:2];
-    AGTEuro *objectB = [[AGTEuro alloc] initWithAmount:2];
+    AGTEuro *objectA = [AGTMoney euroWithAmount:2];
+    AGTEuro *objectB = [AGTMoney euroWithAmount:2];
     
     XCTAssertEqual([objectA hash], [objectB hash], @"Equal objects must have same hash");
 }
 
 -(void)testAmountStorage {
-    AGTEuro *euro = [[AGTEuro alloc] initWithAmount:2];
+    AGTEuro *euro = [AGTMoney euroWithAmount:2];
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"

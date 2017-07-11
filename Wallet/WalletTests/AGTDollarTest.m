@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTDollar.h"
+#import "AGTMoney.h"
 
 
 @interface AGTDollarTest : XCTestCase
@@ -17,8 +18,8 @@
 @implementation AGTDollarTest
 
 -(void)testMultiplication {
-    AGTDollar *five = [[AGTDollar alloc] initWithAmount:5];
-    AGTDollar *ten = [[AGTDollar alloc] initWithAmount:10];
+    AGTDollar *five = [AGTMoney dollarWithAmount:5];
+    AGTDollar *ten = [AGTMoney dollarWithAmount:10];
     
     AGTDollar *total = [five times:2];
     
@@ -26,25 +27,25 @@
 }
 
 -(void)testEquality {
-    AGTDollar *five = [[AGTDollar alloc] initWithAmount:5];
+    AGTDollar *five = [AGTMoney dollarWithAmount:5];
     AGTDollar *total = [five times:3];
     
     XCTAssertEqualObjects(total,
-                          [[AGTDollar alloc] initWithAmount:15],
+                          [AGTMoney dollarWithAmount:15],
                           @"Equivalent objects should be equal");
     
     XCTAssertFalse([total isEqual:five], @"Non equivalent objects should not be equal");
 }
 
 -(void)testHash {
-    AGTDollar *objectA = [[AGTDollar alloc] initWithAmount:2];
-    AGTDollar *objectB = [[AGTDollar alloc] initWithAmount:2];
+    AGTDollar *objectA = [AGTMoney dollarWithAmount:2];
+    AGTDollar *objectB = [AGTMoney dollarWithAmount:2];
     
     XCTAssertEqual([objectA hash], [objectB hash], @"Equal objects must have same hash");
 }
 
 -(void)testAmountStorage {
-    AGTDollar *dollar = [[AGTDollar alloc] initWithAmount:2];
+    AGTDollar *dollar = [AGTMoney dollarWithAmount:2];
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"

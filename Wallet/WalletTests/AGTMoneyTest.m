@@ -95,4 +95,10 @@
                           @"$5 + $10 = $15");
 }
 
+-(void)testThatHashIsAmount {
+    AGTMoney *one = [AGTMoney dollarWithAmount:1];
+    
+    XCTAssertEqual([one hash], 1, @"The hash must be the same as the amount");
+}
+
 @end

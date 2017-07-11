@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTEuro.h"
+#import "AGTMoney.h"
 
 @interface AGTEuroTests : XCTestCase
 
@@ -17,7 +18,7 @@
 //Ahora que tenemos la comparación entre objetos podemos esconder la propiedad amount y verificar
 //la multiplicación de la siguiente manera
 -(void)testMultiplication {
-    AGTEuro *euro = [[AGTEuro alloc] initWithAmount:5];
+    AGTEuro *euro = [AGTMoney euroWithAmount:5];
     AGTEuro *total = [euro times:2];
     
     XCTAssertEqualObjects(total,

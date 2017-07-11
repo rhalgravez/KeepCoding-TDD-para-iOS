@@ -10,6 +10,9 @@
 
 @interface AGTMoney : NSObject
 
++(instancetype)euroWithAmount:(NSInteger)amount;
++(instancetype)dollarWithAmount:(NSInteger)amount;
+
 -(instancetype)initWithAmount:(NSInteger)amount;
 
 -(AGTMoney*)times:(NSInteger)multiplier;

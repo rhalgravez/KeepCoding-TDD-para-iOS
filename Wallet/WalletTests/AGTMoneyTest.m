@@ -80,5 +80,11 @@
 #pragma clang diagnostic pop
 }
 
+-(void)testDifferentCurrencies {
+    AGTMoney *euro = [AGTMoney euroWithAmount:1];
+    AGTMoney *dollar = [AGTMoney dollarWithAmount:1];
+    
+    XCTAssertNotEqualObjects(euro, dollar, @"Different currencies should not be equal");
+}
 
 @end

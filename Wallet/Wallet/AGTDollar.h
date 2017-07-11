@@ -11,6 +11,4 @@
 
 @interface AGTDollar : AGTMoney
 
--(AGTDollar *)times:(NSInteger)multiplier;
-
 @end

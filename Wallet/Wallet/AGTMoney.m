@@ -31,9 +31,10 @@
 }
 
 -(AGTMoney*)times:(NSInteger)multiplier {
-    //No se debe llamar, sino que se debe usar la de subclase
     
-    return [self subclassResponsability:_cmd];
+    AGTMoney *newMoney = [[AGTMoney alloc] initWithAmount: [self.amount integerValue] * multiplier ];
+    
+    return newMoney;
 }
 
 #pragma mark - Overwritten

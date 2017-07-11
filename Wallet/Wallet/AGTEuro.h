@@ -11,6 +11,5 @@
 
 @interface AGTEuro : AGTMoney
 
--(AGTEuro *)times:(NSInteger)multiplier;
 
 @end

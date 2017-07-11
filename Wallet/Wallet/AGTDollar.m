@@ -11,10 +11,4 @@
 
 @implementation AGTDollar
 
--(AGTDollar *)times:(NSInteger)multiplier {
-    AGTDollar *newDollar = [[AGTDollar alloc] initWithAmount: [self.amount integerValue] * multiplier ];
-    
-    return newDollar;
-}
-
 @end

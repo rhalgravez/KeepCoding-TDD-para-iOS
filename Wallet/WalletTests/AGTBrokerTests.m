@@ -36,4 +36,16 @@
     XCTAssertEqualObjects(sum, reduced, @"Conversion to same currency should be NOP");
 }
 
+-(void)testReduction {
+    AGTMoney *dollars = [AGTMoney dollarWithAmount:10];
+    AGTMoney *euros = [AGTMoney euroWithAmount:5];
+    
+    AGTBroker * broker = [AGTBroker new];
+    [broker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    
+    AGTMoney *converted = [broker reduce:dollars toCurrency:@"EUR"];
+    
+    XCTAssertEqualObjects(converted, euros, @"$10 == €5 2:1");
+}
+
 @end

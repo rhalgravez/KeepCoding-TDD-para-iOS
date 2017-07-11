@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTMoney.h"
+#import "AGTBroker.h"
 
 @interface AGTBrokerTests : XCTestCase
 
@@ -32,7 +33,7 @@
     //Convirtiendo dólares en dólares, pude haber hecho euros a euros
     AGTMoney *reduced = [broker reduce:sum toCurrency:@"USD"];
     
-    XCTAssertNotEqualObjects(sum, reduced, @"Conversion to same currency should be NOP");
+    XCTAssertEqualObjects(sum, reduced, @"Conversion to same currency should be NOP");
 }
 
 @end

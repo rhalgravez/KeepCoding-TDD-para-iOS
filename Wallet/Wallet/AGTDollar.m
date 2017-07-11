@@ -16,13 +16,6 @@
 
 @implementation AGTDollar
 
--(instancetype)initWithAmount:(NSInteger)amount {
-    if (self = [super init]) {
-        _amount = amount;
-    }
-    return self;
-}
-
 -(AGTDollar *)times:(NSInteger)multiplier {
     AGTDollar *newDollar = [[AGTDollar alloc] initWithAmount: self.amount * multiplier ];
     

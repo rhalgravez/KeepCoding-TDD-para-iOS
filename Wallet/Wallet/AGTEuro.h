@@ -11,8 +11,6 @@
 
 @interface AGTEuro : AGTMoney
 
--(instancetype)initWithAmount:(NSInteger)amount;
-
 -(AGTEuro *)times:(NSInteger)multiplier;
 
 @end

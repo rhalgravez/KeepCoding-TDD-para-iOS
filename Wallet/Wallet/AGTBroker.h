@@ -13,5 +13,5 @@
 @interface AGTBroker : NSObject
 
 -(AGTMoney *)reduce:(AGTMoney *)money toCurrency:(NSString *)currency;
-
+-(void)addRate:(NSInteger)rate fromCurrency:(NSString *)fromCurrency toCurrency:(NSString *)toCurrency;
 @end

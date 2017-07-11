@@ -14,10 +14,10 @@
 
 @implementation AGTMoney
 #pragma mark - Class methods
-+(instancetype)euroWithAmount:(NSInteger)amount {
++(id)euroWithAmount:(NSInteger)amount {
     return [[AGTEuro alloc] initWithAmount:amount];
 }
-+(instancetype)dollarWithAmount:(NSInteger)amount{
++(id)dollarWithAmount:(NSInteger)amount{
     return [[AGTDollar alloc] initWithAmount:amount];
     
 }

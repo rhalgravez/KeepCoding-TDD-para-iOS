@@ -26,13 +26,37 @@
 }
 
 -(AGTMoney *)reduce:(AGTMoney *)money toCurrency:(NSString *)currency {
-    return money;
     
+    AGTMoney *result;
+    double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency
+                                                          toCurrency:currency]]
+                      doubleValue];
+    //1)Comprobamos que divisa de origen y destino son las mismas
+    if ([money.currency isEqualToString:currency]) {
+        result = money;
+    } else if(rate == 0){
+        //No hay tasa de conversión, excepción que te crió
+        [NSException raise:@"NoCOnversionRateException"
+                    format:@"Must have a conversion from %@ to %@",money.currency, currency];
+    } else {
+        //Tenemos conversión
+        NSInteger newAmount = [money.amount integerValue] * rate;
+        
+        result = [[AGTMoney alloc]
+                              initWithAmount:newAmount
+                              currency:currency];
+    }
+    
+    return result;
 }
 
 -(void)addRate:(NSInteger)rate fromCurrency:(NSString *)fromCurrency toCurrency:(NSString *)toCurrency {
     [self.rates setObject:@(rate)
-                   forKey:[self keyFromCurrency:fromCurrency toCurrency:toCurrency]];
+                   forKey:[self keyFromCurrency:fromCurrency
+                                     toCurrency:toCurrency]];
+    
+    [self.rates setObject:@(1.0/rate) forKey:[self keyFromCurrency:toCurrency
+                                                      toCurrency:fromCurrency]];
 }
 
 #pragma mark - Utils

@@ -15,6 +15,6 @@
 
 -(instancetype)initWithAmount:(NSInteger)amount;
 
--(AGTMoney*)times:(NSInteger)multiplier;
+-(id)times:(NSInteger)multiplier;
 
 @end

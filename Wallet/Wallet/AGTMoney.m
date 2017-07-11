@@ -30,7 +30,7 @@
     return self;
 }
 
--(AGTMoney*)times:(NSInteger)multiplier {
+-(id)times:(NSInteger)multiplier {
     
     AGTMoney *newMoney = [[AGTMoney alloc] initWithAmount: [self.amount integerValue] * multiplier ];
     

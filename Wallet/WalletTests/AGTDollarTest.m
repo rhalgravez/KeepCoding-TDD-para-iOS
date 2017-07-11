@@ -42,4 +42,11 @@
     XCTAssertEqual([objectA hash], [objectB hash], @"Equal objects must have same hash");
 }
 
+-(void)testAmountStorage {
+    AGTDollar *dollar = [[AGTDollar alloc] initWithAmount:2];
+    
+    XCTAssertEqual(2, [dollar amount], @"The value retrieved should be the smae as the stored");
+    //La property amount no está visible en AGTDollar, ni en AGTMoney, tenemos que buscar una solucíón
+}
+
 @end

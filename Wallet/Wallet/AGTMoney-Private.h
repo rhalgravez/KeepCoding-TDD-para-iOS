@@ -8,6 +8,6 @@
 
 @interface AGTMoney ()
 
-@property (nonatomic) NSInteger amount;
+@property (nonatomic, strong) NSNumber *amount;
 
 @end

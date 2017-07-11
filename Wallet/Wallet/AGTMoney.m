@@ -14,7 +14,7 @@
 
 -(instancetype)initWithAmount:(NSInteger)amount {
     if (self = [super init]) {
-        _amount = amount;
+        _amount = @(amount);
     }
     return self;
 }
@@ -27,7 +27,7 @@
 
 #pragma mark - Overwritten
 -(NSString *)description {
-    return [NSString stringWithFormat:@"<%@ %ld>", [self class], [self amount]];
+    return [NSString stringWithFormat:@"<%@ %ld>", [self class], [[self amount] integerValue]];
 }
 
 -(BOOL)isEqual:(id)object {

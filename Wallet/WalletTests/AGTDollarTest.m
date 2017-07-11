@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTDollar.h"
-#import "AGTMoney-Private.h"
+
 
 @interface AGTDollarTest : XCTestCase
 
@@ -46,7 +46,7 @@
 -(void)testAmountStorage {
     AGTDollar *dollar = [[AGTDollar alloc] initWithAmount:2];
     
-    XCTAssertEqual(2, [dollar amount], @"The value retrieved should be the smae as the stored");
+    XCTAssertEqual(2, [[dollar performSelector:@selector(amount)] intValue], @"The value retrieved should be the smae as the stored");
     //La property amount no está visible en AGTDollar, ni en AGTMoney, tenemos que buscar una solucíón
 }
 

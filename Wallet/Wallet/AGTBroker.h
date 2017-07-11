@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class AGTMoney;
+
 @interface AGTBroker : NSObject
+
+-(AGTMoney *)reduce:(AGTMoney *)money toCurrency:(NSString *)currency;
 
 @end

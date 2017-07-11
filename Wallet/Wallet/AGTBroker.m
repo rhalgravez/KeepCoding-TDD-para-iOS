@@ -7,7 +7,13 @@
 //
 
 #import "AGTBroker.h"
+#import "AGTMoney.h"
 
 @implementation AGTBroker
+
+-(AGTMoney *)reduce:(AGTMoney *)money toCurrency:(NSString *)currency {
+    return money;
+    
+}
 
 @end

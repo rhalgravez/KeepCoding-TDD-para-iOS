@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AGTMoney.h"
 
 @interface AGTBrokerTests : XCTestCase
 
@@ -22,6 +23,16 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+-(void)testSimpleReduction {
+    AGTBroker *broker = [[AGTBroker alloc] init];
+    AGTMoney *sum = [[AGTMoney dollarWithAmount:5] plus:[AGTMoney dollarWithAmount:5]];
+    
+    //Convirtiendo dólares en dólares, pude haber hecho euros a euros
+    AGTMoney *reduced = [broker reduce:sum toCurrency:@"USD"];
+    
+    XCTAssertNotEqualObjects(sum, reduced, @"Conversion to same currency should be NOP");
 }
 
 @end

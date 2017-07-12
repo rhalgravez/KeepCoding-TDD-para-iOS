@@ -7,12 +7,9 @@
 //
 
 #import "AGTBroker.h"
-#import "AGTMoney.h"
+
 
 @interface AGTBroker ()
-
-//Proeprty para llevar registro de las divisas y sus tasas de cambio
-@property (nonatomic, strong) NSMutableDictionary *rates;
 
 @end
 
@@ -25,29 +22,11 @@
     return self;
 }
 
--(AGTMoney *)reduce:(AGTMoney *)money toCurrency:(NSString *)currency {
+-(AGTMoney *)reduce:(AGTMoney*)money toCurrency:(NSString *)currency {
     
-    AGTMoney *result;
-    double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency
-                                                          toCurrency:currency]]
-                      doubleValue];
-    //1)Comprobamos que divisa de origen y destino son las mismas
-    if ([money.currency isEqualToString:currency]) {
-        result = money;
-    } else if(rate == 0){
-        //No hay tasa de conversión, excepción que te crió
-        [NSException raise:@"NoCOnversionRateException"
-                    format:@"Must have a conversion from %@ to %@",money.currency, currency];
-    } else {
-        //Tenemos conversión
-        NSInteger newAmount = [money.amount integerValue] * rate;
-        
-        result = [[AGTMoney alloc]
-                              initWithAmount:newAmount
-                              currency:currency];
-    }
+    //double dispatch
     
-    return result;
+    return [money reduceToCurrency:currency withBroker:self];
 }
 
 -(void)addRate:(NSInteger)rate fromCurrency:(NSString *)fromCurrency toCurrency:(NSString *)toCurrency {

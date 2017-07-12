@@ -7,6 +7,7 @@
 //
 
 #import "AGTMoney.h"
+#import "AGTBroker.h"
 
 @interface AGTMoney ()
 
@@ -28,7 +29,7 @@
 //Cualquier texto se puedo poner en currency así que quizás deberíamos agregar código
 //que verifique que el currency es EUR o USD, pero eso lo podemos dejar
 //para tareas de 'algún día'
--(instancetype)initWithAmount:(NSInteger)amount currency:(NSString *)currency{
+-(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency{
     if (self = [super init]) {
         _amount = @(amount);
         _currency = currency;
@@ -36,7 +37,7 @@
     return self;
 }
 
--(id)times:(NSInteger)multiplier {
+-(AGTMoney *)times:(NSInteger)multiplier {
     
     AGTMoney *newMoney = [[AGTMoney alloc] initWithAmount: [self.amount integerValue] * multiplier
                                                  currency:self.currency];
@@ -50,6 +51,30 @@
     AGTMoney *total = [[AGTMoney alloc] initWithAmount:totalAmount currency:self.currency];
     
     return total;
+}
+
+-(AGTMoney *)reduceToCurrency:(NSString *)currency withBroker:(AGTBroker *)broker {
+    AGTMoney *result;
+    double rate = [[broker.rates objectForKey:[broker keyFromCurrency:self.currency
+                                                       toCurrency:currency]]
+                   doubleValue];
+    //1)Comprobamos que divisa de origen y destino son las mismas
+    if ([self.currency isEqualToString:currency]) {
+        result = self;
+    } else if(rate == 0){
+        //No hay tasa de conversión, excepción que te crió
+        [NSException raise:@"NoCOnversionRateException"
+                    format:@"Must have a conversion from %@ to %@",self.currency, currency];
+    } else {
+        //Tenemos conversión
+        NSInteger newAmount = [self.amount integerValue] * rate;
+        
+        result = [[AGTMoney alloc]
+                  initWithAmount:newAmount
+                  currency:currency];
+    }
+    
+    return result;
 }
 
 #pragma mark - Overwritten

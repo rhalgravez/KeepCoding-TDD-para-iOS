@@ -47,7 +47,7 @@
     AGTMoney *five = [AGTMoney euroWithAmount:5];
     AGTMoney *ten = [AGTMoney euroWithAmount:10];
     
-    AGTMoney*total = [five times:2];
+    AGTMoney *total = [five times:2];
     
     XCTAssertEqualObjects(ten, total, @"Equivalent object should be equal");
     

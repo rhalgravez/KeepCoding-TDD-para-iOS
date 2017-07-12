@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "AGTMoney.h"
 #import "AGTBroker.h"
+#import "AGTWallet.h"
 
 @interface AGTWalletTests : XCTestCase
 
@@ -32,11 +33,11 @@
     [wallet plus: [AGTMoney dollarWithAmount:20]];
     
     AGTBroker *broker = [AGTBroker new];
-    [broker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    [broker addRate:2 fromCurrency:@"EUR" toCurrency:@"USD"];
     
     AGTMoney *reduced = [broker reduce:wallet toCurrency:@"USD"];
     
-    XCTAssertEqualObjects(reduced, [AGTMoney dollarWithAmount:10], @"€40 + $20 = $100 2:1");
+    XCTAssertEqualObjects(reduced, [AGTMoney dollarWithAmount:100], @"€40 + $20 = $100 2:1");
 }
 
 @end

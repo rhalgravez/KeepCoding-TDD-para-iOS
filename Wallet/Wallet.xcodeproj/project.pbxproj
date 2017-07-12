@@ -17,6 +17,7 @@
 		62D7EF471F15489F00771041 /* AGTBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF461F15489F00771041 /* AGTBrokerTests.m */; };
 		62D7EF4A1F154BD000771041 /* AGTBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF491F154BD000771041 /* AGTBroker.m */; };
 		62D7EF4C1F159BD900771041 /* AGTWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF4B1F159BD900771041 /* AGTWalletTests.m */; };
+		62D7EF4F1F159E7000771041 /* AGTWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF4E1F159E7000771041 /* AGTWallet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		62D7EF481F154BD000771041 /* AGTBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTBroker.h; sourceTree = "<group>"; };
 		62D7EF491F154BD000771041 /* AGTBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTBroker.m; sourceTree = "<group>"; };
 		62D7EF4B1F159BD900771041 /* AGTWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWalletTests.m; sourceTree = "<group>"; };
+		62D7EF4D1F159E7000771041 /* AGTWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWallet.h; sourceTree = "<group>"; };
+		62D7EF4E1F159E7000771041 /* AGTWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWallet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				62D7EF3C1F141EC900771041 /* AGTMoney.m */,
 				62D7EF481F154BD000771041 /* AGTBroker.h */,
 				62D7EF491F154BD000771041 /* AGTBroker.m */,
+				62D7EF4D1F159E7000771041 /* AGTWallet.h */,
+				62D7EF4E1F159E7000771041 /* AGTWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				62D7EF3D1F141EC900771041 /* AGTMoney.m in Sources */,
 				62D7EF4A1F154BD000771041 /* AGTBroker.m in Sources */,
 				62D7EF411F14318D00771041 /* NSObject+GNUStepAddones.m in Sources */,
+				62D7EF4F1F159E7000771041 /* AGTWallet.m in Sources */,
 				62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */,
 				62D7EF091F106AB600771041 /* main.m in Sources */,
 			);

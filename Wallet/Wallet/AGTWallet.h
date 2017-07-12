@@ -12,4 +12,6 @@
 
 @interface AGTWallet : NSObject <AGTMoney>
 
+@property (nonatomic, readonly) NSUInteger count;
+
 @end

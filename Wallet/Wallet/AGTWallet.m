@@ -17,6 +17,10 @@
 
 @implementation AGTWallet
 
+-(NSUInteger *)count {
+    return [self.moneys count];
+}
+
 -(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency {
     if (self = [super init]) {
         AGTMoney *money = [[AGTMoney alloc] initWithAmount:amount currency:currency];

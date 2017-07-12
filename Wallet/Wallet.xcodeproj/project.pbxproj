@@ -11,6 +11,7 @@
 		623B81231F15B6FC00A7498C /* AGTSimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623B81211F15B6FC00A7498C /* AGTSimpleViewController.xib */; };
 		623B81261F15B72D00A7498C /* AGTControllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 623B81251F15B72D00A7498C /* AGTControllersTests.m */; };
 		623B81291F15BDD900A7498C /* AGTWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623B81281F15BDD900A7498C /* AGTWalletTableViewController.m */; };
+		623B812C1F15C84800A7498C /* AGTNSNtificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 623B812B1F15C84800A7498C /* AGTNSNtificationCenterTests.m */; };
 		62D7EF091F106AB600771041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF081F106AB600771041 /* main.m */; };
 		62D7EF0C1F106AB600771041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF0B1F106AB600771041 /* AppDelegate.m */; };
 		62D7EF141F106AB700771041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D7EF131F106AB700771041 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		623B81251F15B72D00A7498C /* AGTControllersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTControllersTests.m; sourceTree = "<group>"; };
 		623B81271F15BDD900A7498C /* AGTWalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWalletTableViewController.h; sourceTree = "<group>"; };
 		623B81281F15BDD900A7498C /* AGTWalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWalletTableViewController.m; sourceTree = "<group>"; };
+		623B812B1F15C84800A7498C /* AGTNSNtificationCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNSNtificationCenterTests.m; sourceTree = "<group>"; };
 		62D7EF041F106AB600771041 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D7EF081F106AB600771041 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62D7EF0A1F106AB600771041 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		623B812A1F15C81E00A7498C /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				623B812B1F15C84800A7498C /* AGTNSNtificationCenterTests.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
 		62D7EEFB1F106AB600771041 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		62D7EF201F106AB700771041 /* WalletTests */ = {
 			isa = PBXGroup;
 			children = (
+				623B812A1F15C81E00A7498C /* Singletons */,
 				623B81241F15B70300A7498C /* Controllers */,
 				62D7EF2C1F106CF700771041 /* Model */,
 				62D7EF231F106AB700771041 /* Info.plist */,
@@ -304,6 +315,7 @@
 			files = (
 				62D7EF431F14361400771041 /* AGTMoneyTest.m in Sources */,
 				62D7EF471F15489F00771041 /* AGTBrokerTests.m in Sources */,
+				623B812C1F15C84800A7498C /* AGTNSNtificationCenterTests.m in Sources */,
 				623B81261F15B72D00A7498C /* AGTControllersTests.m in Sources */,
 				62D7EF4C1F159BD900771041 /* AGTWalletTests.m in Sources */,
 			);

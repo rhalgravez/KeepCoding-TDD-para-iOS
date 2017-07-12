@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AGTFakeNotificationCenter.h"
+#import "AGTWallet.h"
 
 @interface AGTNSNtificationCenterTests : XCTestCase
 
@@ -27,9 +29,9 @@
 -(void)testThatSubscribesToMemoryWarning {
     AGTFakeNotificationCenter *fake = [AGTFakeNotificationCenter new];
     
-    AGTBigAndFatObject *fat = [AGTBigAndFatObject new];
+    AGTWallet *fat = [AGTWallet new];
     
-    [fat subscribeToMemoryWarning:fake];
+    [fat subscribeToMemoryWarning:(NSNotificationCenter*)fake];
     
     NSDictionary *obs = [fake observers];
     id observer = [obs objectForKey:UIApplicationDidReceiveMemoryWarningNotification];

@@ -9,6 +9,8 @@
 #import "AGTWallet.h"
 #import "AGTMoney.h"
 
+@import UIKit;
+
 @interface AGTWallet ()
 
 @property (nonatomic, strong) NSMutableArray *moneys;
@@ -57,5 +59,17 @@
     }
                   
     return result;
+}
+
+#pragma mark -Notifications
+-(void)subscribeToMemoryWarning:(NSNotificationCenter *)nc {
+    [nc addObserver:self
+           selector:@selector(dumpToDisk:)
+               name:UIApplicationDidReceiveMemoryWarningNotification
+             object:nil];
+}
+
+-(void)dumpToDisk:(NSNotification *)notifiation {
+    //guardar las cosas en disco cuando la cosa se pone fea
 }
 @end

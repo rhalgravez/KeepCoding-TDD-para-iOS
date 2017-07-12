@@ -8,12 +8,17 @@
 
 #import <XCTest/XCTest.h>
 #import "AGTSimpleViewController.h"
+#import "AGTWalletTableViewController.h"
+#import "AGTWallet.h"
 
 @interface AGTControllersTests : XCTestCase
 
 @property (nonatomic, strong) AGTSimpleViewController *simpleVC;
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UILabel *label;
+
+@property (nonatomic, strong) AGTWalletTableViewController *walletVC;
+@property (nonatomic, strong) AGTWallet *wallet;
 
 @end
 
@@ -27,6 +32,10 @@
     [self.button setTitle:@"Hola" forState:UIControlStateNormal];
     self.label = [[UILabel alloc] initWithFrame:CGRectZero];
     self.simpleVC.displayLabel = self.label;//asignar la etiqueta self.label para que displayText: pueda cambiarla
+    
+    self.wallet = [[AGTWallet alloc] initWithAmount:1 currency:@"USD"];
+    [self.wallet plus:[AGTMoney euroWithAmount:1]];
+    self.walletVC = [[AGTWalletTableViewController alloc] initWithModel:self.wallet];
 }
 
 - (void)tearDown {
@@ -36,6 +45,9 @@
     self.simpleVC = nil;
     self.button = nil;
     self.label = nil;
+    
+    self.walletVC = nil;
+    self.wallet = nil;
 }
 
 -(void)testThatTextOnLabelIsEqualToTextButton {
@@ -44,6 +56,17 @@
     [self.simpleVC displayText:self.button];
     //comprobamso que etiqueta y botón tienen el mismo texto
     XCTAssertEqualObjects(self.button.titleLabel.text, self.label.text, @"Button and label should have the same text");
+}
+
+-(void)testThatTableHasOneSection {
+    NSUInteger section = [self.walletVC numberOfSectionsInTableView:nil];
+    
+    XCTAssertEqual(section, 1, @"There can only be one");
+    
+}
+
+-(void) testThatNumberOfCellsIsNumberOfMoneysPlusOne {
+    
 }
 
 @end

@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)displayText:(id)sender {
+    UIButton *button = sender;
+    
+    self.displayLabel.text = button.titleLabel.text;
+}
 @end

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AGTSimpleViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+- (IBAction)displayText:(id)sender;
 
 @end

@@ -26,6 +26,7 @@
     self.button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.button setTitle:@"Hola" forState:UIControlStateNormal];
     self.label = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.simpleVC.displayLabel = self.label;//asignar la etiqueta self.label para que displayText: pueda cambiarla
 }
 
 - (void)tearDown {

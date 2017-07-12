@@ -16,6 +16,7 @@
 		62D7EF431F14361400771041 /* AGTMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF421F14361400771041 /* AGTMoneyTest.m */; };
 		62D7EF471F15489F00771041 /* AGTBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF461F15489F00771041 /* AGTBrokerTests.m */; };
 		62D7EF4A1F154BD000771041 /* AGTBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF491F154BD000771041 /* AGTBroker.m */; };
+		62D7EF4C1F159BD900771041 /* AGTWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D7EF4B1F159BD900771041 /* AGTWalletTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		62D7EF461F15489F00771041 /* AGTBrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTBrokerTests.m; sourceTree = "<group>"; };
 		62D7EF481F154BD000771041 /* AGTBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTBroker.h; sourceTree = "<group>"; };
 		62D7EF491F154BD000771041 /* AGTBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTBroker.m; sourceTree = "<group>"; };
+		62D7EF4B1F159BD900771041 /* AGTWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWalletTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				62D7EF421F14361400771041 /* AGTMoneyTest.m */,
 				62D7EF461F15489F00771041 /* AGTBrokerTests.m */,
+				62D7EF4B1F159BD900771041 /* AGTWalletTests.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				62D7EF431F14361400771041 /* AGTMoneyTest.m in Sources */,
 				62D7EF471F15489F00771041 /* AGTBrokerTests.m in Sources */,
+				62D7EF4C1F159BD900771041 /* AGTWalletTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

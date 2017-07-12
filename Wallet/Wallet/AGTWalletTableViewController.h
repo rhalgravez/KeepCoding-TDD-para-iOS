@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class AGTWallet;
+
 @interface AGTWalletTableViewController : UITableViewController
+
+-(instancetype)initWithModel:(AGTWallet *)model;
 
 @end
